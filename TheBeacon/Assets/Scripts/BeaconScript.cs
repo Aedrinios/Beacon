@@ -7,8 +7,11 @@ public class BeaconScript : MonoBehaviour
     public List<Transform> beaconSpawnList = new List<Transform>();
     public Transform player;
 
+    public float maxAngle;
+    public float maxRadius;
+
     private int rand;
-    private bool canTeleport;
+    public static bool canTeleport;
 
     private void Start()
     {
@@ -19,25 +22,41 @@ public class BeaconScript : MonoBehaviour
 
     private void Update()
     {
-        if (LosingSightOfPlayer(player) && canTeleport) 
+        if (!inFOV(player, transform, maxAngle, maxRadius) && canTeleport) 
         {
             ChangePosition();
         }
     }
 
-    private bool LosingSightOfPlayer(Transform player)
+    public static bool inFOV(Transform checkingObject, Transform target, float maxAngle, float maxRadius)
     {
-        Vector3 toPlayer = transform.position - player.position;
-        float dot = Vector3.Dot(player.forward, toPlayer.normalized);
-
-        if (dot < 0)
+        Collider[] overlaps = new Collider[10];
+        int count = Physics.OverlapSphereNonAlloc(checkingObject.position, maxRadius, overlaps);
+        for (int i = 0; i < count + 1; i++)
         {
-            return true;
-        }
+            if (overlaps[i] != null)
+            {
+                if (overlaps[i].transform == target)
+                {
+                    Vector3 directionBetween = (target.position - checkingObject.position).normalized;
+                    directionBetween.y *= 0;
 
-        if(dot > 0)
-        {
-            canTeleport = true;
+                    float angle = Vector3.Angle(checkingObject.forward, directionBetween);
+                    if (angle <= maxAngle)
+                    {
+                        Ray ray = new Ray(checkingObject.position, target.position - checkingObject.position);
+                        RaycastHit hit;
+                        if (Physics.Raycast(ray, out hit, maxRadius))
+                        {
+                            if (hit.transform == target)
+                            {
+                                BeaconScript.canTeleport = true;
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
         }
         return false;
     }
