@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{256e3eb4-1e24-44c7-8a69-1587d341b5f5}">
+        <property name="assetPath">
+            <value>Vent continu.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>172</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4cda2874-cbb3-49e0-84fc-d5323663ec45}</destination>
+        </relationship>
+    </object>
+</objects>

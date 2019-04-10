@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{b12a1cd8-f98b-4c43-905b-84b9e5f775e6}">
+        <property name="assetPath">
+            <value>Créature1.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.766734693877551</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4cda2874-cbb3-49e0-84fc-d5323663ec45}</destination>
+        </relationship>
+    </object>
+</objects>

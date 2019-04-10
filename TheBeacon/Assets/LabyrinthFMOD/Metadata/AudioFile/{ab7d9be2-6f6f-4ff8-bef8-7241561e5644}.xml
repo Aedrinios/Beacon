@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{ab7d9be2-6f6f-4ff8-bef8-7241561e5644}">
+        <property name="assetPath">
+            <value>Sandstorm.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>16.589478458049886</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4cda2874-cbb3-49e0-84fc-d5323663ec45}</destination>
+        </relationship>
+    </object>
+</objects>

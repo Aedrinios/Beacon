@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{e8fbb293-2792-470f-a56f-aef7e1a03f87}">
+        <property name="assetPath">
+            <value>179641__nicolasdrweski__violon-melodique-coup-de-debut-fin-en-couille.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>7.4026303854875284</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{4cda2874-cbb3-49e0-84fc-d5323663ec45}</destination>
+        </relationship>
+    </object>
+</objects>
