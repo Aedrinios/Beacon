@@ -30,12 +30,12 @@ public class BeaconScript : MonoBehaviour
         Vector3 toPlayer = transform.position - player.position;
         float dot = Vector3.Dot(player.forward, toPlayer.normalized);
 
-        if (dot < 0)
+        if (dot < 0.65)
         {
             return true;
         }
-
-        if(dot > 0)
+    
+        if(dot > 0.65)
         {
             canTeleport = true;
         }
