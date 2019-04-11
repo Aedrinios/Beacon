@@ -15,10 +15,15 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 114079474070161682}
   - {fileID: 114582799062325730}
-  EditorEvents: []
+  EditorEvents:
+  - {fileID: 114980151055349042}
+  - {fileID: 114699493883317274}
+  - {fileID: 114991006010968884}
+  - {fileID: 114424934122518394}
+  - {fileID: 114409601256147238}
   MasterBankRef: {fileID: 114582799062325730}
   StringsBankRef: {fileID: 114079474070161682}
-  stringsBankWriteTime: 636903991551541220
+  stringsBankWriteTime: 636904973092744178
   cacheVersion: 2
 --- !u!114 &114079474070161682
 MonoBehaviour:
@@ -33,12 +38,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\LabyrinthFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636903991551541220
+  lastModified: 636904973092744178
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 672
+    Value: 962
   Exists: 1
+--- !u!114 &114409601256147238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Vent2D
+  guid: f2cc0f90f73b374caee65e2d4fb39c79
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 77000
+--- !u!114 &114424934122518394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Menace/Cr\xE9ature3D"
+  guid: dae0c5e0b0483a4a9b677da65d57a35c
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4473
 --- !u!114 &114582799062325730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,9 +104,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Oscar\OneDrive\Documents\GitHub\Beacon\TheBeacon\Assets\LabyrinthFMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 636903991551511871
+  lastModified: 636904973092704287
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 12474
+    Value: 3642272
   Exists: 1
+--- !u!114 &114699493883317274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Alt\xE9ration du terrain/Sandstorm2D"
+  guid: 3c6d5e4de041d447b2a34bd6b40cf718
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16589
+--- !u!114 &114980151055349042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Violon2D
+  guid: 0144a9318f135b4780a1cbef6968a9cc
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3397
+--- !u!114 &114991006010968884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menace/Chameau
+  guid: d27e49a02e2fba4085f5f6de1871f81e
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 177563
