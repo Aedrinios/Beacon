@@ -21,9 +21,14 @@ MonoBehaviour:
   - {fileID: 114991006010968884}
   - {fileID: 114424934122518394}
   - {fileID: 114409601256147238}
+  - {fileID: 114233204859144776}
+  - {fileID: 114244807019232252}
+  - {fileID: 114792761003574544}
+  - {fileID: 114947369660111008}
+  - {fileID: 114687068221377660}
   MasterBankRef: {fileID: 114582799062325730}
   StringsBankRef: {fileID: 114079474070161682}
-  stringsBankWriteTime: 636904973092744178
+  stringsBankWriteTime: 636905940663674761
   cacheVersion: 2
 --- !u!114 &114079474070161682
 MonoBehaviour:
@@ -38,12 +43,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\LabyrinthFMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636904973092744178
+  lastModified: 636905940663674761
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 962
+    Value: 1234
   Exists: 1
+--- !u!114 &114233204859144776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menace/Oasis 3D
+  guid: 39ea748b1ba58747bf7b12ae773a6651
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7418
+--- !u!114 &114244807019232252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Alt\xE9ration du terrain/TPTemple3D"
+  guid: 9ac244cc198cc6449a118e7935c7c926
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 4200
+  Length: 4500
 --- !u!114 &114409601256147238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,12 +155,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Oscar\OneDrive\Documents\GitHub\Beacon\TheBeacon\Assets\LabyrinthFMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 636904973092704287
+  lastModified: 636905940663604981
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3642272
+    Value: 2483392
   Exists: 1
+--- !u!114 &114687068221377660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/Storm
+  guid: 6668c1c70f6abd4ab7c23a8314443d59
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4400
 --- !u!114 &114699493883317274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +207,75 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 16589
+--- !u!114 &114756591567897688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: "event:/Alt\xE9ration du terrain/TPTemple2D"
+  guid: 88ae98b4b343ce48acb7a9121f219964
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7800
+--- !u!114 &114792761003574544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Interactions joueur/Footsteps2D
+  guid: 6733ffa77ce2004e907cd049ad4aced3
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 603
+--- !u!114 &114947369660111008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/InsideTemple2D
+  guid: f77c759877429f41acf8fbcda1a3fac8
+  Banks:
+  - {fileID: 114582799062325730}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8000
 --- !u!114 &114980151055349042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,10 +315,10 @@ MonoBehaviour:
   guid: d27e49a02e2fba4085f5f6de1871f81e
   Banks:
   - {fileID: 114582799062325730}
-  IsStream: 1
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 177563
+  Length: 6105

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BeaconScript : MonoBehaviour
 {
+    [FMODUnity.EventRef] //pour fmod
+    public string TPSound;
+    FMOD.Studio.EventInstance sonTP;
+
     public List<Transform> beaconSpawnList = new List<Transform>();
     public Transform player;
 
@@ -13,8 +17,14 @@ public class BeaconScript : MonoBehaviour
     private int rand;
     public static bool canTeleport;
 
+    void Awake() //pour fmod
+    {
+        sonTP = FMODUnity.RuntimeManager.CreateInstance(TPSound);
+    }
+
     private void Start()
     {
+        sonTP.start();
         canTeleport = false;
         rand = Random.Range(0, beaconSpawnList.Count);
         transform.position = beaconSpawnList[rand].position;
@@ -22,8 +32,11 @@ public class BeaconScript : MonoBehaviour
 
     private void Update()
     {
-        if (!inFOV(player, transform, maxAngle, maxRadius) && canTeleport) 
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(sonTP, GetComponent<Transform>(), GetComponent<Rigidbody>());
+
+        if (!inFOV(player, transform, maxAngle, maxRadius) && canTeleport)
         {
+            sonTP.start();
             ChangePosition();
         }
     }
@@ -71,5 +84,5 @@ public class BeaconScript : MonoBehaviour
         rand = newRand;
         transform.position = beaconSpawnList[rand].position;
         canTeleport = false;
-    }   
+    }
 }

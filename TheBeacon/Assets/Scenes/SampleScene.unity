@@ -493,7 +493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4373341305126120, guid: ec45c3a50be417945a8875e772020221, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1500
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 4373341305126120, guid: ec45c3a50be417945a8875e772020221, type: 3}
       propertyPath: m_LocalRotation.x
@@ -540,21 +540,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 625f7bd5af2e16c47994ebdfb860c662, type: 2}
-    - target: {fileID: 5679408304236458448, guid: ec45c3a50be417945a8875e772020221,
-        type: 3}
-      propertyPath: walkSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5679408304236458448, guid: ec45c3a50be417945a8875e772020221,
-        type: 3}
-      propertyPath: jumpSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5679408304236458448, guid: ec45c3a50be417945a8875e772020221,
-        type: 3}
-      propertyPath: runSpeed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4655848096715264, guid: ec45c3a50be417945a8875e772020221, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.82
@@ -579,13 +564,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5679408304236458448, guid: ec45c3a50be417945a8875e772020221,
+        type: 3}
+      propertyPath: walkSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679408304236458448, guid: ec45c3a50be417945a8875e772020221,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679408304236458448, guid: ec45c3a50be417945a8875e772020221,
+        type: 3}
+      propertyPath: runSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1003896090196002, guid: ec45c3a50be417945a8875e772020221, type: 3}
       propertyPath: m_Name
       value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1539749451, guid: ec45c3a50be417945a8875e772020221, type: 3}
+    - {fileID: 81562313935267868, guid: ec45c3a50be417945a8875e772020221, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec45c3a50be417945a8875e772020221, type: 3}
+--- !u!1 &1453675426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1003896090196002, guid: ec45c3a50be417945a8875e772020221,
+    type: 3}
+  m_PrefabInstance: {fileID: 943492198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1453675428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453675426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Ambiance/Vent2D
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1453675430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453675426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!4 &1461429849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4373341305126120, guid: ec45c3a50be417945a8875e772020221,
@@ -832,6 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45f5141232db2aa4291c12b914b66704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TPSound: "event:/Alt\xE9ration du terrain/TPTemple3D"
   beaconSpawnList:
   - {fileID: 54971790}
   - {fileID: 596249762}

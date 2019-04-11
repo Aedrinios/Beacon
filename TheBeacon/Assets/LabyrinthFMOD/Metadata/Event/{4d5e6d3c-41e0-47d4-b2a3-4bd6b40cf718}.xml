@@ -127,6 +127,9 @@
         <property name="length">
             <value>16.589478458049886</value>
         </property>
+        <property name="color">
+            <value>Green</value>
+        </property>
         <relationship name="fadeInCurve">
             <destination>{3b02c14b-a22a-43ab-b652-e0fc820ee2bc}</destination>
         </relationship>
